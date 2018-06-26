@@ -4,7 +4,7 @@ if (this[i] == str) return true;
  }
 return false;
 }
-var chars = {
+module.exports = {
 list: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
 charA: {
 a: ['a', 'á', 'à', 'ȁ', 'ȃ', 'ă', 'ā', 'ã', 'ȧ', 'ä', 'â', 'ǎ', 'å', 'ǟ', 'ǡ', 'ǻ', 'ą', 'ḁ', 'ɑ', 'ά', 'ⱥ', '∆', 'α', 'ά', 'ä', 'á', 'ﾑ', 'α', 'ɑ̝̚', '۸', 'ก', 'ถ', 'ภ', 'ฤ', 'ล', 'ส', 'อ', 'ฮ', 'ค'],
@@ -92,7 +92,7 @@ try {
  } catch (e) {
 return '?';
  }},
-btxt: chars.btxt = function(txt) {
+btxt: function(txt) {
  if (typeof txt !== 'string') throw new TypeError(`"${txt}" unkown string`)
   var finnalWord = '';
   for (var i = 0; i < txt.length; i++) {
@@ -103,4 +103,5 @@ if (chars.list.has(txt.charAt(i).toLowerCase())) {
    }
 console.log(`${txt.charAt(i).toLowerCase()} - ${i} - ${txt} -  ${chars.list.has(txt.charAt(i).toLowerCase())}  -  ${finnalWord}`);
 if (txt.length == finnalWord.length) return finnalWord;
-}}};
+}}
+};
