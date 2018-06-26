@@ -1,0 +1,7 @@
+{
+  "name" : "btxt-module"
+,
+  "version" : "0.1"
+,
+  "main" : "./Index.js"
+}
