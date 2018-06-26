@@ -1,10 +1,22 @@
 {
   "name": "btxt-module",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Btxt Module",
-  "main": "Index.js",
+  "main": "./Index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Hota <mrhota272@gmail.com>"
+  "author": "Hota <mrhota272@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeeeRoux/btxt-module.git"
+  },
+  "keywords": [
+    "272"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeeeRoux/btxt-module/issues"
+  },
+  "homepage": "https://github.com/LeeeRoux/btxt-module#readme"
 }
