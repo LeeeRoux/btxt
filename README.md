@@ -1,2 +1,3 @@
-# btxt-module
-btxt module..
+btxt-module
+===========
+https://github.com/LeeeRoux/btxt-module for more info.
