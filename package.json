@@ -1,7 +1,10 @@
 {
-  "name" : "btxt-module"
-,
-  "version" : "0.1"
-,
-  "main" : "./Index.js"
+  "name": "btxt-module",
+  "version": "0.0.1",
+  "description": "Btxt Module",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hota <mrhota272@gmail.com>"
 }
