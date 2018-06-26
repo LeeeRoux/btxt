@@ -95,13 +95,12 @@ return '?';
 btxt: function(txt) {
  if (typeof txt !== 'string') throw new TypeError(`"${txt}" unkown string`)
   var finnalWord = '';
-  for (var i = 0; i < txt.length; i++) {
-if (chars.list.has(txt.charAt(i).toLowerCase())) {
- finnalWord += eval(`chars.randomChar(chars.char${txt.charAt(i).toUpperCase()}.${txt.charAt(i)})`);
+  for (var i = 0; i < txt.length + 1; i++) {
+if (this.list.has(txt.charAt(i).toLowerCase())) {
+ finnalWord += eval(`this.randomChar(this.char${txt.charAt(i).toUpperCase()}.${txt.charAt(i)})`);
   } else {
  finnalWord += txt.charAt(i);
    }
-console.log(`${txt.charAt(i).toLowerCase()} - ${i} - ${txt} -  ${chars.list.has(txt.charAt(i).toLowerCase())}  -  ${finnalWord}`);
 if (txt.length == finnalWord.length) return finnalWord;
 }}
 };
