@@ -1,6 +1,6 @@
 {
   "name": "btxt-module",
-  "version": "1.0.1",
+  "version": "0.0.2",
   "description": "Btxt Module",
   "main": "./Index.js",
   "scripts": {
@@ -12,7 +12,9 @@
     "url": "git+https://github.com/LeeeRoux/btxt-module.git"
   },
   "keywords": [
-    "272"
+    "npm",
+    "nodejs",
+    "javascript"
   ],
   "license": "ISC",
   "bugs": {
