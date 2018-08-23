@@ -1,6 +1,16 @@
 Array.prototype.random = function() {
-return this[Math.floor(Math.random() * this.length)]};
-module.exports = {
+return this[Math.floor(Math.random() * this.length)]}
+//ES6 Broswers
+if (typeof window !== 'undefined') {
+if (!Array.prototype.includes) {
+Array.prototype.includes = function(e) {
+ for (var i = 0; i < this.length; i++) {
+  if (this[i] == e) return true;
+if (i == this.length - 1) return false;
+  }
+ }
+}};
+const chars = {
 list: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
 charA: {
 a: ['a', 'á', 'à', 'ȁ', 'ȃ', 'ă', 'ā', 'ã', 'ȧ', 'ä', 'â', 'ǎ', 'å', 'ǟ', 'ǡ', 'ǻ', 'ą', 'ḁ', 'ɑ', 'ά', 'ⱥ', '∆', 'α', 'ά', 'ä', 'á', 'ﾑ', 'α', 'ɑ̝̚', '۸', 'ก', 'ถ', 'ภ', 'ฤ', 'ล', 'ส', 'อ', 'ฮ', 'ค'],
@@ -93,3 +103,5 @@ if (this.list.includes(txt.charAt(i).toLowerCase())) {
 if (i == txt.length) return finnalWord;
 }}
 };
+
+if (typeof process !== 'undefined') { module.exports = chars };
