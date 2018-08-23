@@ -1,24 +1,25 @@
 {
-  "name": "btxt-module",
-  "version": "0.0.2",
-  "description": "Btxt Module",
-  "main": "./Index.js",
+  "name": "btxt",
+  "version": "0.1.0",
+  "description": "Customize Your Words!",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Hota <mrhota272@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LeeeRoux/btxt-module.git"
+    "url": "git+https://github.com/LeeeRoux/btxt.git"
   },
   "keywords": [
     "npm",
     "nodejs",
-    "javascript"
+    "javascript",
+    "btxt"
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LeeeRoux/btxt-module/issues"
+    "url": "https://github.com/LeeeRoux/btxt/issues"
   },
-  "homepage": "https://github.com/LeeeRoux/btxt-module#readme"
+  "homepage": "https://github.com/LeeeRoux/btxt#readme"
 }
