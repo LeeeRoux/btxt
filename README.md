@@ -1,6 +1,6 @@
 btxt module
 ===========
-version `1.1.0`
+version `1.2.0`
  Btxt is a very basic module thats all about customized letters
 > npm i btxt@latest
 
