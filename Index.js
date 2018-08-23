@@ -1,9 +1,5 @@
-Array.prototype.has = function(str) {
- for (var i = 0; i < this.length; i++) {
-if (this[i] == str) return true;
- }
-return false;
-}
+Array.prototype.random = function() {
+return this[Math.floor(Math.random() * this.length)]};
 module.exports = {
 list: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
 charA: {
@@ -85,22 +81,15 @@ Y: ['Ỳ', 'Ỳ', 'Ỵ', 'Ỵ', 'Ỷ', 'Ỷ', 'Ỹ', 'Ỹ']},
 charZ: {
 z: ['z̃̾', 'ź', 'ž', 'ż', 'ƶ', 'ʐ', 'ʑ', 'ℤ', 'ẑ', 'ẓ', 'ẕ'],
 Z: ['Ź', 'Ẑ', 'Ẑ', 'Ẓ', 'Ẓ', 'Ẕ', 'Ẕ', 'Ż', 'Ż', 'Ž']},
-randomChar: function(char) {
-try {
-  var n = Math.floor(Math.random() * char.length);
-  return char[n];
- } catch (e) {
-return '?';
- }},
-btxt: function(txt) {
- if (typeof txt !== 'string') throw new TypeError(`"${txt}" unkown string`)
+btxt: function (txt) {
+ if (typeof txt !== 'string') throw new TypeError(`You must provide a String. You've provided a "${typeof txt}"`)
   var finnalWord = '';
   for (var i = 0; i < txt.length + 1; i++) {
-if (this.list.has(txt.charAt(i).toLowerCase())) {
- finnalWord += eval(`this.randomChar(this.char${txt.charAt(i).toUpperCase()}.${txt.charAt(i)})`);
+if (this.list.includes(txt.charAt(i).toLowerCase())) {
+ finnalWord += this[`char${txt.charAt(i).toUpperCase()}`][txt.charAt(i)].random();
   } else {
  finnalWord += txt.charAt(i);
    }
-if (txt.length == finnalWord.length) return finnalWord;
+if (i == txt.length) return finnalWord;
 }}
 };
