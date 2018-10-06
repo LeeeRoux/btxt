@@ -1,16 +1,16 @@
 btxt module
 ===========
-version `1.2.0`
- Btxt is a very basic module thats all about customized letters
-> npm i btxt@latest
-
+Current version `1.2.2`<br>
+Btxt is a collection of over 620 customized letters!
+> npm i btxt
 ```js
-//Loading the module
-const chars = require('btxt');
-console.log(chars.btxt("Hello World!"));
+ const chars = require('btxt');
+ chars.btxt('Hello World!')
+//Output Would be like: Ħȩŀḹ๑ Ŵ๏ṝḹժ!
 ```
-
-Output would be something like..
-``` Ήēŀľσ͠ Ẁ๐ȑł₫!```<br>
-Click [here](https://github.com/LeeeRoux/btxt/wiki) for more info.
+## Broswer Version
+```html
+<script src='https://unpkg.com/btxt/index.js'></script>
+```
+Found any issue/bug? Please report it [here](https://github.com/LeeeRoux/btxt/issues)
 
