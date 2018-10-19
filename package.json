@@ -1,7 +1,7 @@
 {
   "name": "btxt",
-  "version": "1.1.0",
-  "description": "Customize Your Words!",
+  "version": "1.3.0",
+  "description": "Btxt is all about customized letters!",
   "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
