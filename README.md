@@ -3,7 +3,7 @@ Btxt is a very-tiny module for more features to improve your Style
 
 > npm i btxt
 
-#### Methods, Classes & Properties
+#### Methods & Classes
 * **btxt** *Method*<br>
  Convert a String into a Customized String
 - Argument 
