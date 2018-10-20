@@ -1,4 +1,4 @@
-# btxt module v1.3.2
+# btxt module v1.3.3
 Btxt is a very-tiny module for more features to improve your Style
 
 > npm i btxt
