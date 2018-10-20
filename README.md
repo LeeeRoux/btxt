@@ -53,5 +53,5 @@ gen.generate();
 ```
 ## Browser Version
 ```html
-<script src='https://unpkg.com/btxt/bin/btxt-browser.js'></script>
+<script src='https://raw.githubusercontent.com/LeeeRoux/btxt/master/bin/btxt-browser.js'></script>
 ```
