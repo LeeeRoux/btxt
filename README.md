@@ -1,4 +1,5 @@
-# btxt module v1.3.3
+btxt module v1.3.4
+============
 Btxt is a very-tiny module for more features to improve your Style
 
 > npm i btxt
@@ -51,7 +52,21 @@ const b = require('btxt');
 gen.generate();
 //"634h9jTd92X9d2M"
 ```
+* **calculateLatin** *Class*<br>
+ Calculate a latin a number 
+ - Argument
+ * `str` String, Latin Number<br>
+Returns `Number`<br>
+Throw an Error if the number was invaild<br>
+e.g.
+```js
+const b = require('btxt');
+ b.calculateLatin("MDXIV")
+//1514
+```
 ## Browser Version
 ```html
 <script src='https://raw.githubusercontent.com/LeeeRoux/btxt/master/bin/btxt-browser.js'></script>
 ```
+
+Found any issue/bug? Please report it [here](https://github.com/LeeeRoux/btxt/issues)
