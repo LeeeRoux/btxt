@@ -43,7 +43,7 @@ const b = require('btxt');
 * **keyGenerator** *Class*<br>
  Generate a random key that contains characters and numbers
  - Argument
- * `keyLength` Number *Optional* defualt = `15` You can also set the key length dirctly via the prop `.keyLength`<br>
+ * `keyLength` Number *Optional* default = `15` You can also set the key length directly via the prop `.keyLength`<br>
 Returns `String`<br>
 e.g.
 ```js
@@ -53,11 +53,11 @@ gen.generate();
 //"634h9jTd92X9d2M"
 ```
 * **calculateLatin** *Class*<br>
- Calculate a latin a number 
+ Calculate a latin number 
  - Argument
  * `str` String, Latin Number<br>
 Returns `Number`<br>
-Throw an Error if the number was invaild<br>
+Throw an Error if the number was invalid<br>
 e.g.
 ```js
 const b = require('btxt');
