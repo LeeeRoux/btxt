@@ -1,7 +1,7 @@
 ﻿function calculateLatin(str) {
 str = str.toLowerCase().replace(/\s/g, '').split('');
 var toReturn = 0, pos = 6, Ostr = str.join('');
-if (/(iiii|viv|xxxx|dd|ccccc|vv|ll)/g.test(Ostr)) throw `Unknown illeageal latin number`
+if (/(iiii|viv|xxxx|dd|ccccc|vv|ll)/g.test(Ostr)) throw `Unknown latin number`
  for (var i = 0; i < str.length; i++) {
  var e = str[i];
  if (e == "m" && pos >= 6) { toReturn += 1000; pos = 6; continue; }
