@@ -1,10 +1,9 @@
-btxt module v1.3.4 [![Build Status](https://travis-ci.org/LeeeRoux/btxt.svg?branch=master-branch)](https://travis-ci.org/LeeeRoux/btxt)
-============
+Btxt Module [![Build Status](https://travis-ci.org/LeeeRoux/btxt.svg?branch=master-branch)](https://travis-ci.org/LeeeRoux/btxt) [![Version](https://img.shields.io/badge/version-1.3.6-blue.svg)](https://www.npmjs.com/package/btxt?activeTab=versions) 
+===========
 Btxt is a very-tiny module for more features to improve your Style
+> npm i btxt@latest
 
-> npm i btxt
-
-#### Methods & Classes
+#### Properties
 * **btxt** *Method*<br>
  Convert a String into a Customized String
 - Argument 
@@ -16,19 +15,18 @@ const b = require("btxt");
  b.btxt("Hello World");
 //"Ħȩŀḹ๑ Ŵ๏ṝḹժ!"
 ```
-* **Compare** *Method*<br>
- Compare a String with an Array to find the most closed string
+* **compare** Method <br>
+ Compare a String with an Array of string to find the most closed value
 - Arguments 
   * `word` String
   * `toCompareWith` Array<br>
-Returns `String` || `null` Incase there was no any similar value<br>
+Returns `String` || `null` Incase there was no any similar value.<br>
 e.g.
 ```js
  const b = require("btxt");
 b.compare("hulle wurld", ["hello", "boo", "Hello world", "baz", "ello world"])
 //"Hello world"
 ```
-*This function may not be 100% correct*
 * **toLatin** *Method*<br>
  Calculate a number into Latin
 - Argument
@@ -43,7 +41,7 @@ const b = require('btxt');
 * **keyGenerator** *Class*<br>
  Generate a random key that contains characters and numbers
  - Argument
- * `keyLength` Number *Optional* default = `15` You can also set the key length directly via the prop `.keyLength`<br>
+  * `keyLength` Number *Optional* default = `15` You can also set the key length directly via the prop `.keyLength`<br>
 Returns `String`<br>
 e.g.
 ```js
@@ -52,10 +50,10 @@ const b = require('btxt');
 gen.generate();
 //"634h9jTd92X9d2M"
 ```
-* **calculateLatin** *Class*<br>
+* **calculateLatin** *Method*<br>
  Calculate a latin number 
  - Argument
- * `str` String, Latin Number<br>
+  * `str` String, Latin Number<br>
 Returns `Number`<br>
 Throw an Error if the number was invalid<br>
 e.g.
@@ -68,5 +66,3 @@ const b = require('btxt');
 ```html
 <script src='https://raw.githubusercontent.com/LeeeRoux/btxt/master/bin/btxt-browser.js'></script>
 ```
-
-Found any issue/bug? Please report it [here](https://github.com/LeeeRoux/btxt/issues)
