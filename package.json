@@ -4,7 +4,7 @@
   "description": "Btxt is all about customized letters!",
   "main": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "author": "Hota <mrhota272@gmail.com>",
   "repository": {
