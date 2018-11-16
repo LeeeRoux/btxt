@@ -8,8 +8,7 @@ Btxt is a very-tiny module for more features to improve your Style
  Convert a String into a Customized String
 - Argument 
   * `txt` String<br>
- Returns `String`<br>
-e.g.
+ Returns `String`
 ```js
 const b = require("btxt");
  b.btxt("Hello World");
@@ -20,8 +19,7 @@ const b = require("btxt");
 - Arguments 
   * `word` String
   * `toCompareWith` Array<br>
-Returns `String` || `null` Incase there was no any similar value.<br>
-e.g.
+Returns `String` || `null` Incase there was no any similar value
 ```js
  const b = require("btxt");
 b.compare("hulle wurld", ["hello", "boo", "Hello world", "baz", "ello world"])
@@ -31,8 +29,7 @@ b.compare("hulle wurld", ["hello", "boo", "Hello world", "baz", "ello world"])
  Calculate a number into Latin
 - Argument
   * `number` Number<br>
-Returns `String`<br>
-e.g.
+Returns `String`
 ```js
 const b = require('btxt');
  b.toLatin(1540);
@@ -42,8 +39,7 @@ const b = require('btxt');
  Generate a random key that contains characters and numbers
 - Argument
    * `keyLength` Number *Optional* default = `15` You can also set the key length directly via the prop `.keyLength`<br>
-Returns `String`<br>
-e.g.
+Returns `String`
 ```js
 const b = require('btxt');
  var gen = new b.keyGenerator();
@@ -55,8 +51,7 @@ gen.generate();
 - Argument
    * `str` String, Latin Number<br>
 Returns `Number`<br>
-Throw an Error if the number was invalid<br>
-e.g.
+Throw an Error if the number was invalid
 ```js
 const b = require('btxt');
  b.calculateLatin("MDXIV")
