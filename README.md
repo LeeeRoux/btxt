@@ -1,4 +1,4 @@
-btxt module v1.3.4
+btxt module v1.3.4 [![Build Status](https://travis-ci.org/LeeeRoux/btxt.svg?branch=master-branch)](https://travis-ci.org/LeeeRoux/btxt)
 ============
 Btxt is a very-tiny module for more features to improve your Style
 
