@@ -57,6 +57,19 @@ const b = require('btxt');
  b.calculateLatin("MDXIV")
 //1514
 ```
+* **between** *Method*<br>
+ Gets a string between Argument `qu1` and `qu2`<br>
+- Arguments
+  * `str` String.
+  * `qu1` String. Default = `"`
+  * `qu2` String. Default = `qu2`<br>
+  Returns Array | null.<br>
+e.g.
+```js
+ const b = require('btxt');
+b.between("{Hello}{World}{", "{", "}");
+// ["Hello", "World"]
+``` 
 ## Browser Version
 ```html
 <script src='https://raw.githubusercontent.com/LeeeRoux/btxt/master/bin/btxt-browser.js'></script>
