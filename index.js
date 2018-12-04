@@ -16,7 +16,7 @@ btxt: function (txt) {
  if (typeof txt !== 'string') throw new TypeError(`Argument "txt" must be a String.`)
   var finnalWord = '';
   for (var i = 0; i < txt.length + 1; i++) {
-if (this.letters.list.includes(txt.charAt(i).toLowerCase())) {
+if (/[a-zA-Z]/(txt.charAt(i).toLowerCase())) {
  finnalWord += this.letters[`char${txt.charAt(i).toUpperCase()}`][txt.charAt(i)].random();
   } else {
  finnalWord += txt.charAt(i);
