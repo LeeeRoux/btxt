@@ -4,13 +4,11 @@ Array.prototype.random = function() {
 
 //ES6 Browsers
 if (!Array.prototype.includes) {
-    Array.prototype.includes = function(e) {
-        if (this.indexOf(e) > -1)
-            return true;
-        return false;
-    }
-}
-;
+	Array.prototype.includes = function(e) {
+	   return this.indexOf(e) != -1;
+	}
+};
+
 const btxt = {
     list: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
     charA: {
