@@ -10,7 +10,6 @@ if (!Array.prototype.includes) {
 };
 
 const btxt = {
-    list: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
     charA: {
         a: ['a', 'á', 'à', 'ȁ', 'ȃ', 'ă', 'ā', 'ã', 'ȧ', 'ä', 'â', 'ǎ', 'å', 'ǟ', 'ǡ', 'ǻ', 'ą', 'ḁ', 'ɑ', 'ά', 'ⱥ', '∆', 'α', 'ά', 'ä', 'á', 'ﾑ', 'α', 'ɑ̝̚', '۸', 'ก',
         'ถ', 'ภ', 'ฤ', 'ล', 'ส', 'อ', 'ฮ', 'ค'],
@@ -269,7 +268,7 @@ const btxt = {
             throw new TypeError(`You must provide a String. @"${typeof txt}"`)
         var finnalWord = '';
         for (var i = 0; i < txt.length + 1; i++) {
-            if (this.list.includes(txt.charAt(i).toLowerCase())) {
+            if (/[a-zA-Z]/.test(txt.charAt(i).toLowerCase())) {
                 finnalWord += this[`char${txt.charAt(i).toUpperCase()}`][txt.charAt(i)].random();
             } else {
                 finnalWord += txt.charAt(i);
