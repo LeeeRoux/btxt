@@ -1,6 +1,6 @@
 Btxt Module [![Build Status](https://travis-ci.org/LeeeRoux/btxt.svg?branch=master-branch)](https://travis-ci.org/LeeeRoux/btxt) [![Version](https://img.shields.io/badge/version-1.3.6-blue.svg)](https://www.npmjs.com/package/btxt?activeTab=versions) 
 ===========
-Btxt is a very-tiny module for more features to improve your Style
+Btxt is a very-tiny module for more features to improve your developing powers
 > npm i btxt@latest
 
 #### Properties
